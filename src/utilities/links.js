@@ -8,14 +8,14 @@ export const componentsLinks = [
   { text: "Link", url: "/link" },
   { text: "List", url: "/list" },
   { text: "Navigation", url: "/navigation" },
-  { text: "Modal", url: "Modal" },
+  { text: "Modal", url: "/modal" },
   { text: "Overflow Menu", url: "/overflow-menu" },
   { text: "Pagination", url: "/pagination" },
   { text: "Progress Indicator", url: "/progress-indicator" },
-  { text: "Radio Button", url: "radio-button" },
+  { text: "Radio Button", url: "/radio-button" },
   { text: "Search", url: "/search" },
   { text: "Select", url: "/select" },
-  { text: "Tab", url: "tab" }
+  { text: "Tab", url: "/tab" }
 ];
 
 export const styleLinks = [

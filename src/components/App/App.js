@@ -8,10 +8,11 @@ import Documentation from "../Documentation/Documentation";
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
-      <div className="App">hello</div>
-      <Route path={`/documentation`} component={Documentation} />
-      <Footer />
+      <main className="app">
+        <NavBar />
+        <Route path={`/documentation`} component={Documentation} />
+        <Footer />
+      </main>
     </BrowserRouter>
   );
 }
