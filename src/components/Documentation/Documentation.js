@@ -46,6 +46,7 @@ class Documentation extends Component {
             path="/documentation/getting-started"
             component={GettingStarted}
           />
+          <Route path="/documentation" component={GettingStarted} />
 
           <Route
             path="/documentation/style/accessibility-standards"
@@ -122,8 +123,6 @@ class Documentation extends Component {
             component={SelectPage}
           />
           <Route path="/documentation/components/tab" component={TabPage} />
-
-          <Route render={() => <p>404</p>} />
         </Switch>
       </section>
     );
