@@ -1,0 +1,80 @@
+@import "../../../global-styles/terra";
+
+.homepage-hero {
+  background-color: #005f9e;
+  padding: spacing("xl") 0;
+  @include for-size("tablet-landscape-up") {
+    padding: spacing("mega") 0;
+  }
+  &__container {
+    @include container;
+    max-width: 700px;
+    margin: auto;
+  }
+  &__header {
+    color: white;
+    font-size: 32px;
+  }
+  &__text {
+    color: white;
+    font-size: 24px;
+  }
+}
+
+.homepage-main {
+  padding: spacing("xl") 0;
+  @include for-size("tablet-landscape-up") {
+    padding: spacing("super") 0;
+  }
+  &__grid {
+    @include container;
+    @include for-size("tablet-landscape-up") {
+      @include grid-container;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      grid-column-gap: 32px;
+      max-width: 700px;
+    }
+    max-width: 700px;
+    margin: auto;
+  }
+  &__grid-item {
+    .ter-card {
+      height: 100%;
+      margin-bottom: spacing("lg");
+      @include for-size("tablet-landscape-up") {
+        margin-bottom: 0;
+      }
+      &__body {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        height: 100%;
+      }
+      &__sub-header {
+        font-size: 12px;
+        font-weight: font-weight(300);
+        margin-bottom: spacing("sm");
+        display: block;
+      }
+      &__cta {
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+      }
+      &__image {
+        display: block;
+        padding: spacing("sm") spacing("sm") 0 spacing("sm");
+        display: flex;
+        align-items: center;
+        img {
+          width: 80px;
+          height: auto;
+          margin: auto;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
