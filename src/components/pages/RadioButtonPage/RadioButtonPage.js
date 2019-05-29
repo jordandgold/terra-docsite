@@ -1,7 +1,7 @@
 import React from "react";
 
 const RadioButtonPage = () => {
-  return <div>RadioButton Page</div>;
+  return <div className="doc-page">RadioButton Page</div>;
 };
 
 export default RadioButtonPage;

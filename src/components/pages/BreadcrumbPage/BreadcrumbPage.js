@@ -1,7 +1,7 @@
 import React from "react";
 
 const BreadcrumbPage = () => {
-  return <div>Breadcrumb Page</div>;
+  return <div className="doc-page">Breadcrumb Page</div>;
 };
 
 export default BreadcrumbPage;

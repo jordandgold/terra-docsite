@@ -11,8 +11,9 @@ class Sidebar extends Component {
         <NavLink
           key={component.text}
           to={`/documentation/components${component.url}`}
+          className="ter-accordion__fold-link"
         >
-          {component.text}
+          <p> {component.text}</p>
         </NavLink>
       );
     });
@@ -21,8 +22,12 @@ class Sidebar extends Component {
   generateStyleLinks = () => {
     return styleLinks.map(style => {
       return (
-        <NavLink key={style.text} to={`/documentation/style${style.url}`}>
-          {style.text}
+        <NavLink
+          key={style.text}
+          to={`/documentation/style${style.url}`}
+          className="ter-accordion__fold-link"
+        >
+          <p>{style.text}</p>
         </NavLink>
       );
     });
@@ -31,13 +36,18 @@ class Sidebar extends Component {
   render() {
     return (
       <nav className="sidebar">
-        <NavLink to="/documentation/getting-started">Getting Started</NavLink>
+        <NavLink
+          className="sidebar__getting-started-link"
+          to="/documentation/getting-started"
+        >
+          <p>Getting Started</p>
+        </NavLink>
         <Accordion>
-          <AccordionFold header="Components">
-            {this.generateComponentLinks()}
-          </AccordionFold>
           <AccordionFold header="Style">
             {this.generateStyleLinks()}
+          </AccordionFold>
+          <AccordionFold header="Components">
+            {this.generateComponentLinks()}
           </AccordionFold>
         </Accordion>
       </nav>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const CheckboxPage = () => {
-  return <div>Checkbox Page</div>;
+  return <div className="doc-page">Checkbox Page</div>;
 };
 
 export default CheckboxPage;

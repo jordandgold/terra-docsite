@@ -1,7 +1,7 @@
 import React from "react";
 
 const NavigationPage = () => {
-  return <div>Navigation Page</div>;
+  return <div className="doc-page">Navigation Page</div>;
 };
 
 export default NavigationPage;

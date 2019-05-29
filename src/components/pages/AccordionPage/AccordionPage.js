@@ -1,7 +1,7 @@
 import React from "react";
 
 const AccordionPage = () => {
-  return <div>accordion</div>;
+  return <div className="doc-page">accordion</div>;
 };
 
 export default AccordionPage;

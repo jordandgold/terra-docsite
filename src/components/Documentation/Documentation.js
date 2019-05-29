@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, NavLink, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./Documentation.scss";
 
 import Sidebar from "../Sidebar/Sidebar";
@@ -46,7 +46,7 @@ class Documentation extends Component {
             path="/documentation/getting-started"
             component={GettingStarted}
           />
-          <Route path="/documentation" component={GettingStarted} />
+          <Route exact path="/documentation" component={GettingStarted} />
 
           <Route
             path="/documentation/style/accessibility-standards"

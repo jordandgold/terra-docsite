@@ -3,9 +3,8 @@ import "./Footer.scss";
 
 const Footer = () => {
   return (
-    <footer>
-      <div />
-      I'm the footer
+    <footer className="footer">
+      <p>Version 1.0 - Last updated on April 23, 2019</p>
     </footer>
   );
 };

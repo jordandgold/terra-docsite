@@ -1,4 +1,11 @@
+@import "../../global-styles/terra.scss";
+
 .documentation {
   display: grid;
   grid-template-columns: 300px 1fr;
+  min-height: calc(100vh - 84px);
+
+  .doc-page {
+    border-left: solid 2px gray("gray-3");
+  }
 }

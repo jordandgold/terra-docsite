@@ -1,7 +1,7 @@
 import React from "react";
 
 const ButtonsPage = () => {
-  return <div>Buttons Page</div>;
+  return <div className="doc-page">Buttons Page</div>;
 };
 
 export default ButtonsPage;

@@ -1,13 +1,71 @@
+@import "../../global-styles/terra.scss";
+
 .sidebar {
+  padding-top: spacing("lg");
+
+  &__getting-started-link {
+    text-decoration: none;
+    padding-top: spacing("xxs");
+    padding-left: spacing("lg");
+    padding-bottom: spacing("xs");
+
+    &.active {
+      background: gray("gray-3");
+    }
+
+    &:hover {
+      text-decoration: none;
+      background: gray("gray-3");
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.6;
+      margin: 0;
+      color: gray("black");
+    }
+  }
+
   a {
     display: block;
   }
 
   .ter-accordion__fold {
     border: 0;
+
+    &-link {
+      text-decoration: none;
+      padding-left: spacing("xl");
+
+      &.active {
+        background: gray("gray-3");
+      }
+
+      &:hover {
+        text-decoration: none;
+        background: gray("gray-3");
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: gray("black");
+        margin: 0;
+        padding: spacing("xxs") 0;
+      }
+    }
   }
 
   .ter-accordion {
     border: 0;
+
+    &__content {
+      padding: 0;
+    }
+
+    &__trigger {
+      padding-left: spacing("lg");
+    }
   }
 }

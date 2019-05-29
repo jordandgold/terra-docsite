@@ -1,7 +1,7 @@
 import React from "react";
 
 const DropdownPage = () => {
-  return <div>Dropdown Page</div>;
+  return <div className="doc-page">Dropdown Page</div>;
 };
 
 export default DropdownPage;
