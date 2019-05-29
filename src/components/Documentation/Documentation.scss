@@ -7,5 +7,9 @@
 
   .doc-page {
     border-left: solid 2px gray("gray-3");
+
+    &__header {
+      font-size: font-size("xl");
+    }
   }
 }

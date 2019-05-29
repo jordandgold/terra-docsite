@@ -1,12 +1,8 @@
 @import "../../../global-styles/terra.scss";
 
-.doc-page__color {
+.color-page {
   padding: spacing("xxl");
   max-width: 800px;
-
-  &__header {
-    font-size: font-size("xl");
-  }
 
   hr {
     border-top: solid 1px gray("black");
