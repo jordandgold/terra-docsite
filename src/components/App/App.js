@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import { BrowserRouter, Route } from "react-router-dom";
+import HomePage from "../pages/HomePage/HomePage";
 import NavBar from "../NavBar/NavBar";
 import Footer from "../Footer/Footer";
 import Documentation from "../Documentation/Documentation";
@@ -16,6 +17,7 @@ function App() {
           <NavBar />
         </section>
         <Route path={`/documentation`} component={Documentation} />
+        <Route path={`/`} component={HomePage} exact />
         <Footer />
       </main>
     </BrowserRouter>
