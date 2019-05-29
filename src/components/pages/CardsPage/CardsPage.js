@@ -21,6 +21,10 @@ class CardsPage extends Component {
     };
   }
 
+  componentDidMount() {
+    Prism.highlightAll();
+  }
+
   changeTab = (section, string) => {
     this.setState(
       {
