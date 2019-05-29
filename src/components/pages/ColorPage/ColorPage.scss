@@ -1,0 +1,11 @@
+@import "../../../global-styles/terra.scss";
+
+.color-page {
+  padding: spacing("xxl");
+  max-width: 800px;
+
+  &__swatch-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
