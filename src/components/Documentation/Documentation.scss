@@ -6,7 +6,9 @@
   min-height: calc(100vh - 84px);
 
   .doc-page {
+    padding: spacing("xxl");
     border-left: solid 2px gray("gray-3");
+    max-width: 800px;
 
     hr {
       border-top: solid 1px gray("black");
@@ -26,6 +28,7 @@
 
     &__section {
       margin-top: spacing("lg");
+      margin-bottom: spacing("lg");
     }
   }
 }
