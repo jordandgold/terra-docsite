@@ -2,7 +2,10 @@
 
 .homepage-hero {
   background-color: #005f9e;
-  padding: spacing("mega") 0;
+  padding: spacing("xl") 0;
+  @include for-size("tablet-landscape-up") {
+    padding: spacing("mega") 0;
+  }
   &__container {
     @include container;
     max-width: 700px;
@@ -19,19 +22,30 @@
 }
 
 .homepage-main {
-  padding: spacing("super") 0;
+  padding: spacing("xl") 0;
+  @include for-size("tablet-landscape-up") {
+    padding: spacing("super") 0;
+  }
   &__grid {
-    @include grid-container;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    grid-column-gap: 32px;
+    @include container;
+    @include for-size("tablet-landscape-up") {
+      @include grid-container;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      grid-column-gap: 32px;
+      max-width: 700px;
+    }
     max-width: 700px;
     margin: auto;
   }
   &__grid-item {
     .ter-card {
       height: 100%;
+      margin-bottom: spacing("lg");
+      @include for-size("tablet-landscape-up") {
+        margin-bottom: 0;
+      }
       &__body {
         display: flex;
         flex: 1;
