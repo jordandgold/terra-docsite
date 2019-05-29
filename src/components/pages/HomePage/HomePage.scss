@@ -49,6 +49,18 @@
         display: flex;
         justify-content: center;
       }
+      &__image {
+        display: block;
+        padding: spacing("sm") spacing("sm") 0 spacing("sm");
+        display: flex;
+        align-items: center;
+        img {
+          width: 80px;
+          height: auto;
+          margin: auto;
+          display: inline-block;
+        }
+      }
     }
   }
 }

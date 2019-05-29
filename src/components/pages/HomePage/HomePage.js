@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./HomePage.scss";
+import sketchIcon from "./assets/Sketch-Card-Icon.png";
+import reactIcon from "./assets/React-Card-Icon.png";
 
 const HomePage = () => {
   return (
@@ -26,6 +28,9 @@ const HomePage = () => {
         <div className="homepage-main__grid">
           <div className="homepage-main__grid-item">
             <article className="ter-card">
+              <div class="ter-card__image">
+                <img src={sketchIcon} alt="Terra Sketch UI Kit" />
+              </div>
               <div className="ter-card__body">
                 <h3 className="ter-card__header">Terra Sketch UI Kit</h3>
                 <span className="ter-card__sub-header">
@@ -45,6 +50,9 @@ const HomePage = () => {
           </div>
           <div className="homepage-main__grid-item">
             <article className="ter-card">
+              <div class="ter-card__image">
+                <img src={reactIcon} alt="Terra React Component Library" />
+              </div>
               <div className="ter-card__body">
                 <h3 className="ter-card__header">React Component Library</h3>
                 <span className="ter-card__sub-header">
