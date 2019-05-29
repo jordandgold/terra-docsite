@@ -30,5 +30,12 @@
       margin-top: spacing("lg");
       margin-bottom: spacing("lg");
     }
+
+    &__code-snippet-span {
+      background: gray("gray-2");
+      color: brand-color("brand-4");
+      padding: 0 4px;
+      font-family: monospace, monospace;
+    }
   }
 }
