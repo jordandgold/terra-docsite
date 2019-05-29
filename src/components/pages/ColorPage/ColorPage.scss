@@ -2,7 +2,7 @@
 
 .doc-page__color {
   padding: spacing("xxl");
-  width: 800px;
+  max-width: 800px;
 
   &__header {
     font-size: font-size("xl");
