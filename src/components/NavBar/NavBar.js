@@ -11,7 +11,7 @@ const NavBar = () => {
         </h4>
       </NavLink>
       <div className="nav-bar__link-container">
-        <NavLink className="nav-bar__link" to="/documentation">
+        <NavLink className="nav-bar__link" to="/documentation/getting-started">
           <p>Documentation</p>
         </NavLink>
         <NavLink className="nav-bar__link" to="/resources">

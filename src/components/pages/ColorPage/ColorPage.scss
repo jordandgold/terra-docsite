@@ -1,0 +1,30 @@
+@import "../../../global-styles/terra.scss";
+
+.doc-page__color {
+  padding: spacing("xxl");
+  width: 800px;
+
+  &__header {
+    font-size: font-size("xl");
+  }
+
+  hr {
+    border-top: solid 1px gray("black");
+  }
+
+  &__section {
+    margin-top: spacing("lg");
+  }
+
+  &__main-description {
+    font-size: font-size("md");
+  }
+  &__text-description {
+    font-size: font-size("base");
+  }
+
+  &__swatch-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

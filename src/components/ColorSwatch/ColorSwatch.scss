@@ -1,0 +1,34 @@
+@import "../../global-styles/terra.scss";
+
+.color-swatch {
+  height: 200px;
+  width: 190px;
+  margin-right: 24px;
+
+  &__main {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: gray("white");
+      margin: 0;
+    }
+  }
+  &__secondary {
+    height: 20px;
+
+    &--one {
+      filter: brightness(0.85);
+    }
+
+    &--two {
+      filter: brightness(0.6);
+    }
+
+    &--three {
+      filter: brightness(0.45);
+    }
+  }
+}
