@@ -37,5 +37,29 @@
       padding: 0 4px;
       font-family: monospace, monospace;
     }
+
+    &__code-tab {
+      display: flex;
+      justify-content: flex-end;
+      background: #f5f9fc;
+      color: gray("gray-5");
+      margin-top: spacing("md");
+
+      p {
+        margin-right: spacing("sm");
+        margin-bottom: 0;
+        margin-top: spacing("xxs");
+        font-size: font-size("nano");
+        font-weight: font-weight("bold");
+
+        &.is-active {
+          color: brand-color("brand-1");
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
