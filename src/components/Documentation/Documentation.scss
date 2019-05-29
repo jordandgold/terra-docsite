@@ -8,8 +8,24 @@
   .doc-page {
     border-left: solid 2px gray("gray-3");
 
+    hr {
+      border-top: solid 1px gray("black");
+    }
+
     &__header {
       font-size: font-size("xl");
+    }
+
+    &__main-description {
+      font-size: font-size("md");
+    }
+
+    &__section-text {
+      font-size: font-size("base");
+    }
+
+    &__section {
+      margin-top: spacing("lg");
     }
   }
 }

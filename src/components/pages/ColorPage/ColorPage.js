@@ -23,25 +23,25 @@ class ColorPage extends Component {
         <h1 className="doc-page__header">Color</h1>
         <p className="doc-page__main-description">{mainDescription}</p>
         <hr />
-        <section className="color-page__section">
-          <h2 className="color-page__sub-header">Brand Colors</h2>
-          <p className="color-page__text-description">{brandDescription}</p>
+        <section className="doc-page__section">
+          <h2 className="doc-page__section-header">Brand Colors</h2>
+          <p className="doc-page__section-text">{brandDescription}</p>
           <div className="color-page__swatch-container">
             {this.renderSwatches(brandSwatches)}
           </div>
         </section>
         <hr />
-        <section className="color-page__section">
-          <h2 className="color-page__sub-header">UI Colors</h2>
-          <p className="color-page__text-description">{uiDescription}</p>
+        <section className="doc-page__section">
+          <h2 className="doc-page__section-header">UI Colors</h2>
+          <p className="doc-page__section-text">{uiDescription}</p>
           <div className="color-page__swatch-container">
             {this.renderSwatches(uiSwatches)}
           </div>
         </section>
         <hr />
-        <section className="color-page__section">
-          <h2 className="color-page__sub-header">Emotive Colors</h2>
-          <p className="color-page__text-description">{emotiveDescription}</p>
+        <section className="doc-page__section">
+          <h2 className="doc-page__section-header">Emotive Colors</h2>
+          <p className="doc-page__section-text">{emotiveDescription}</p>
           <div className="color-page__swatch-container">
             {this.renderSwatches(emotiveSwatches)}
           </div>

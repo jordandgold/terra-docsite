@@ -4,21 +4,6 @@
   padding: spacing("xxl");
   max-width: 800px;
 
-  hr {
-    border-top: solid 1px gray("black");
-  }
-
-  &__section {
-    margin-top: spacing("lg");
-  }
-
-  &__main-description {
-    font-size: font-size("md");
-  }
-  &__text-description {
-    font-size: font-size("base");
-  }
-
   &__swatch-container {
     display: flex;
     flex-wrap: wrap;
