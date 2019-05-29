@@ -1,0 +1,52 @@
+@import "../../global-styles/terra.scss";
+
+.nav-bar {
+  background-color: brand-color("brand-2");
+  position: fixed;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  align-items: center;
+  height: 84px;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: box-shadow(1);
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  &__header {
+    color: gray("gray-1");
+    font-size: font-size("xl");
+    margin: 0 spacing("lg");
+  }
+
+  &__version {
+    font-size: font-size("nano");
+    font-weight: font-weight("light");
+  }
+
+  &__link-container {
+    justify-self: end;
+    margin-right: spacing("md");
+    display: flex;
+  }
+
+  &__link {
+    margin: 0 0 0 spacing("xxl");
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0;
+      color: gray("gray-1");
+    }
+  }
+}

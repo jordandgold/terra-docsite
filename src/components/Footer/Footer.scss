@@ -1,0 +1,15 @@
+@import "../../global-styles/terra.scss";
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1002;
+  background: gray("white");
+  padding: spacing("xxs") spacing("md");
+  box-shadow: box-shadow(4);
+  p {
+    margin: 0;
+    font-size: font-size("micro");
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 
 const LinksPage = () => {
-  return <div>Links Page</div>;
+  return <div className="doc-page">Links Page</div>;
 };
 
 export default LinksPage;

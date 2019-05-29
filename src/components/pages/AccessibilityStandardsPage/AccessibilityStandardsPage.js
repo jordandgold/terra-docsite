@@ -1,7 +1,7 @@
 import React from "react";
 
 const AccessibilityStandardsPage = () => {
-  return <div>AccessibilityStandards Page</div>;
+  return <div className="doc-page">AccessibilityStandards Page</div>;
 };
 
 export default AccessibilityStandardsPage;

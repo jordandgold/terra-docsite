@@ -9,7 +9,12 @@ function App() {
   return (
     <BrowserRouter>
       <main className="app">
-        <NavBar />
+        <section
+          className="app__nav-spacer"
+          aria-label="top navigation wrapper"
+        >
+          <NavBar />
+        </section>
         <Route path={`/documentation`} component={Documentation} />
         <Footer />
       </main>

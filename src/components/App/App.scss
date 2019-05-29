@@ -1,4 +1,12 @@
+@import "../../global-styles/terra.scss";
+
 .app {
-  max-width: 1200px;
+  // max-width: 1200px;
+  min-height: 100vh;
   margin: auto;
+  position: relative;
+
+  &__nav-spacer {
+    height: 84px;
+  }
 }

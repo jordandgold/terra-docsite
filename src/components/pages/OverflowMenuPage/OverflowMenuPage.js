@@ -1,7 +1,7 @@
 import React from "react";
 
 const OverflowMenuPage = () => {
-  return <div>OverflowMenu Page</div>;
+  return <div className="doc-page">OverflowMenu Page</div>;
 };
 
 export default OverflowMenuPage;
