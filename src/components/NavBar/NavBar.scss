@@ -1,17 +1,17 @@
 @import "../../global-styles/terra.scss";
 
-.nav-bar {
-  background-color: brand-color("brand-2");
+.ter-navbar {
+  background-color: $navbar-bg;
   position: fixed;
   display: grid;
   grid-template-columns: 250px 1fr;
   align-items: center;
-  height: 84px;
+  height: $navbar-height;
   width: 100%;
   z-index: 1000;
   box-shadow: box-shadow(1);
 
-  a {
+  &__logo {
     text-decoration: none;
 
     &:hover {
@@ -20,27 +20,25 @@
     }
   }
 
-  &__header {
-    color: gray("gray-1");
-    font-size: font-size("xl");
-    margin: 0 spacing("lg");
-  }
-
-  &__version {
-    font-size: font-size("nano");
-    font-weight: font-weight("light");
-  }
-
-  &__link-container {
+  &__nav {
     justify-self: end;
     margin-right: spacing("md");
     display: flex;
   }
 
-  &__link {
+  &__nav-link,
+  &__nav-link[href] {
     margin: 0 0 0 spacing("xxl");
+    font-size: $navbar-font-size;
+    color: $navbar-link-color;
+    text-decoration: none;
+    &:visited,
+    &:active {
+      color: $navbar-link-color;
+    }
     &:hover {
       cursor: pointer;
+      color: $navbar-link-hover-color;
       text-decoration: none;
     }
 
@@ -48,5 +46,16 @@
       margin: 0;
       color: gray("gray-1");
     }
+  }
+}
+
+.ter-logo {
+  color: gray("gray-1");
+  font-size: font-size("xl");
+  margin: 0 spacing("lg");
+
+  &__version {
+    font-size: font-size("nano");
+    font-weight: font-weight("normal");
   }
 }

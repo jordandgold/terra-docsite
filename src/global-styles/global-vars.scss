@@ -248,11 +248,11 @@ $navbar-height: 72px;
 // set to true if using module
 $has-universal-navbar: false;
 $navbar-universal-height: 32px;
-$navbar-bg: color("gray-2");
+$navbar-bg: brand-color("brand-2");
 $navbar-logo-height: 42px;
-$navbar-font-size: font-size("nano");
-$navbar-link-color: color("gray-8");
-$navbar-link-hover: color("gray-6");
+$navbar-font-size: font-size("sm");
+$navbar-link-color: color("white");
+$navbar-link-hover-color: color("white");
 $navbar-link-hover-bg: color("gray-0");
 $navbar-link-text-transform: uppercase;
 $navbar-link-font-weight: font-weight("extra-bold");
