@@ -1,0 +1,14 @@
+@import "../../../global-styles/terra.scss";
+
+.cards-page {
+  ul {
+    margin-top: spacing("md");
+  }
+  li {
+    margin-top: spacing("xxs");
+  }
+
+  .ter-card {
+    width: 288px;
+  }
+}

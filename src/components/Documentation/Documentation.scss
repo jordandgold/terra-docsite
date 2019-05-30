@@ -10,6 +10,8 @@
     border-left: solid 2px gray("gray-3");
     max-width: 800px;
 
+    animation: fade-in linear 0.2s;
+
     hr {
       border-top: solid 1px gray("black");
     }
@@ -30,5 +32,45 @@
       margin-top: spacing("lg");
       margin-bottom: spacing("lg");
     }
+
+    &__code-snippet-span {
+      background: gray("gray-2");
+      color: brand-color("brand-4");
+      padding: 0 4px;
+      font-family: monospace, monospace;
+    }
+
+    &__code-tab {
+      display: flex;
+      justify-content: flex-end;
+      background: #f5f9fc;
+      color: gray("gray-5");
+      margin-top: spacing("md");
+
+      p {
+        margin-right: spacing("sm");
+        margin-bottom: 0;
+        margin-top: spacing("xxs");
+        font-size: font-size("nano");
+        font-weight: font-weight("bold");
+
+        &.is-active {
+          color: brand-color("brand-1");
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

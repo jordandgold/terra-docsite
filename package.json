@@ -16,7 +16,7 @@
     "react-scripts": "3.0.1",
     "react-slidedown": "^2.4.1",
     "react-transition-group": "^4.0.1",
-    "terra-component-lib": "^0.6.2"
+    "terra-component-lib": "^0.6.3"
   },
   "scripts": {
     "start": "react-scripts start",
