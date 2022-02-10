@@ -7,7 +7,7 @@
     "enzyme-adapter-react-16": "^1.13.2",
     "enzyme-to-json": "^3.3.5",
     "jsdom": "^15.1.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "prismjs": "^1.16.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
